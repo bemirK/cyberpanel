@@ -854,7 +854,9 @@
                                 <a href="#" title="{% trans 'CloudLinux' %}">
                                     <i class="glyph-icon icon-linecons-fire"></i>
                                     <span>{% trans "CloudLinux" %}</span>
+																		<!-- SRX
                                     <span class="bs-label badge-yellow">{% trans "NEW" %}</span>
+																		-->
                                 </a>
                                 <div class="sidebar-submenu">
 
@@ -1067,7 +1069,9 @@
                                 <a href="#" title="{% trans 'Mail Settings' %}">
                                     <i class="glyph-icon icon-envelope"></i>
                                     <span>{% trans "Mail Settings" %}</span>
+																		<!-- SRX
                                     <span class="bs-label badge-yellow">{% trans "NEW" %}</span>
+																		-->
                                 </a>
                                 <div class="sidebar-submenu">
 
@@ -1171,12 +1175,14 @@
                                     href="/base/onboarding">Setup Wizard.</a></p>
                         </div>
                     {% endif %}
+										<!-- SRX
                     {% if backupDisplay == 1 %}
                         <div class="alert alert-warning">
                             <p>Looks like your websites are not secured with automatic backups. <a
                                     href="/backup/OneClickBackups">Configure now.</a></p>
                         </div>
                     {% endif %}
+										-->
                     {% block content %}
                     {% endblock %}
 
